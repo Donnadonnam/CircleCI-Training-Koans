@@ -1,6 +1,6 @@
-version: 2.1
+#  version: 2.1
 
-jobs:
+#  jobs:
   build:
     docker: # use the docker executor type; machine and macos executors are also supported
       - image: cimg/base:2022.10 # the primary container, where your job's commands are run
@@ -8,7 +8,5 @@ jobs:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
 
-workflows:
-  build-workflow:
-    jobs:
-      - build
+#    build-workflow:
+#        - build
